@@ -1,8 +1,6 @@
 # TransparenciaAlagoas
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/transparencia_alagoas`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem aims to facilitating access to the "Portal da Transparência (http://transparencia.al.gov.br)" of the state of Alagoas. It abstracts the access to this portal data that is provided through a REST API.
 
 ## Installation
 
@@ -22,7 +20,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+This Gem are not covering the whole API yet. For while we provide the resources of servants, biddings and patrimony. There a class responsible for each one of this resources.
+
+Take a look at some examples:
+
+```ruby
+# encoding: utf-8
+
+require 'transparencia_alagoas'
+
+# Get active servant that received some money on month 8 of year 2016
+# If month and/or year are not provided we'll use the current month and/or year
+active_servants = TransparenciaAlagoas::Servant.active_servants(month:8, year:2016)
+```
+
+To have details about Portal da Transparência API please take a look on this [documentation](http://transparencia.al.gov.br/portal/api).
 
 ## Development
 
