@@ -64,7 +64,7 @@ To have more details about Portal da Transparência API please take a look on th
 
 ### Class Bidding
 
-#### Method get(qty: 10, offset: 0, options: {})
+#### Method: get(qty: 10, offset: 0, options: {})
 
 *Available Options:*
 
@@ -80,7 +80,7 @@ order | text | Define a ordem que será ordenada a consulta. Valores: asc / desc
 
 ### Class Patrimony
 
-#### Method property_list(qty: 10, offset: 0, options: {})
+#### Method: property_list(qty: 10, offset: 0, options: {})
 
 *Available Options*
 
@@ -92,7 +92,7 @@ situacao_ocupacao | text | Filtra pela situação do imóvel entre os retornados
 sort | text | Define o campo o qual será ordenada a consulta.
 order | text | Define a ordem que será ordenada a consulta. Valores: asc / desc
 
-#### Method ug_list(qty: 10, offset: 0, options: {})
+#### Method: ug_list(qty: 10, offset: 0, options: {})
 
 *Available Options*
 
@@ -102,7 +102,7 @@ descricao_ug | text | Filtra pelo nome da unidade gestora entre os retornados na
 sort | text | Define o campo o qual será ordenada a consulta.
 order | text | Define a ordem que será ordenada a consulta. Valores: asc / desc
 
-#### Method materials_list(qty: 10, offset: 0, ug_code: nil, options: {})
+#### Method: materials_list(qty: 10, offset: 0, ug_code: nil, options: {})
 
 *Available Options*
 
@@ -114,7 +114,7 @@ material | text | Filtra pelo nome do material entre os retornados na consulta.
 sort | text | Define o campo o qual será ordenada a consulta.
 order | text | Define a ordem que será ordenada a consulta. Valores: asc / desc
 
-#### Method material_detail(qty: 10, offset: 0, ug_code: nil, material: nil, options: {})
+#### Method: material_detail(qty: 10, offset: 0, ug_code: nil, material: nil, options: {})
 
 *Available Options*
 
@@ -130,7 +130,7 @@ order | text | Define a ordem que será ordenada a consulta. Valores: asc / desc
 
 ### Class Servant
 
-#### Method active_servants(qty: 10, offset: 0, month: nil, year: nil, options: {})
+#### Method: active_servants(qty: 10, offset: 0, month: nil, year: nil, options: {})
 
 *Available Options*
 
@@ -143,7 +143,7 @@ codigo_orgao | integer | Filtra pelo código do órgão entre os retornados na c
 sort | text | Define o campo o qual será ordenada a consulta.
 order | text | Define a ordem que será ordenada a consulta. Valores: asc / desc
 
-#### Method detail_active_servant(qty: 10, offset: 0, servant_id: nil, options: {})
+#### Method: detail_active_servant(qty: 10, offset: 0, servant_id: nil, options: {})
 
 *Available Options*
 
@@ -155,7 +155,7 @@ sort | text | Define o campo o qual será ordenada a consulta.
 order | text | Define a ordem que será ordenada a consulta. Valores: asc / desc
 
 
-#### Method inactive_servants(qty: 10, offset: 0, month: nil, year: nil, options: {})
+#### Method: inactive_servants(qty: 10, offset: 0, month: nil, year: nil, options: {})
 
 *Available Options*
 
@@ -168,7 +168,7 @@ vinculo | integer | Filtra pelo vínculo entre os retornados na consulta. (Valor
 sort | text | Define o campo o qual será ordenada a consulta.
 order | text | Define a ordem que será ordenada a consulta. (Valores: asc / desc)
 
-#### Method detail_inactive_servant(qty: 10, offset: 0, servant_id: nil, options: {})
+#### Method: detail_inactive_servant(qty: 10, offset: 0, servant_id: nil, options: {})
 
 *Available Options*
 
